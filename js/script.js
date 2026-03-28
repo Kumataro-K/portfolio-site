@@ -88,6 +88,10 @@ function updateMobileStatus() {
 
 // サイドバートグルのイベントリスナー
 if (sidebarToggle) {
+    sidebarToggle.addEventListener('mouseenter', showSidebar);
+    sidebarToggle.addEventListener('mouseleave', hideSidebar);
+    
+    // モバイルでのクリック機能
     sidebarToggle.addEventListener('click', (e) => {
         e.preventDefault();
         if (isMobile) {
@@ -95,17 +99,12 @@ if (sidebarToggle) {
         }
     });
     
-    // デスクトップでのホバー機能
-    if (!isMobile) {
-        sidebarToggle.addEventListener('mouseenter', showSidebar);
-        sidebarToggle.addEventListener('mouseleave', hideSidebar);
-        
-        sidebar.addEventListener('mouseenter', () => {
-            clearTimeout(sidebarTimeout);
-        });
-        
-        sidebar.addEventListener('mouseleave', hideSidebar);
-    }
+    // サイドバー内のホバー
+    sidebar.addEventListener('mouseenter', () => {
+        clearTimeout(sidebarTimeout);
+    });
+    
+    sidebar.addEventListener('mouseleave', hideSidebar);
 }
 
 // ========================================

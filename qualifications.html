@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>取得資格 - ポートフォリオサイト</title>
+    <title>取得資格 - でんでんのポートフォリオ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ハンバーガーメニューボタン -->
+    <button class="sidebar-toggle" id="sidebarToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <!-- サイドバー -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-header">
-            <button class="sidebar-toggle" id="sidebarToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <h2>メニュー</h2>
         </div>
         <nav class="sidebar-nav">
             <ul>
                 <li><a href="index.html" class="nav-link">ホーム</a></li>
                 <li><a href="qualifications.html" class="nav-link active">取得資格</a></li>
-                <li><a href="works.html" class="nav-link">制作作品</a></li>
+                <li><a href="works.html" class="nav-link">制作アプリ</a></li>
             </ul>
         </nav>
     </aside>
@@ -30,87 +32,85 @@
     <main class="main-content">
         <header class="page-header">
             <h1>取得資格</h1>
-            <p>これまでに取得した資格一覧です</p>
+            <p>でんでんが取得した資格と今後の目標です</p>
         </header>
 
-        <section class="qualifications">
-            <div class="qualifications-grid">
-                <div class="qualification-card">
-                    <div class="qualification-icon">�</div>
-                    <div class="qualification-content">
-                        <h3>TOEIC IP 765点</h3>
-                        <p class="qualification-org">ETS</p>
-                        <p class="qualification-date">2023年6月取得</p>
-                        <p class="qualification-description">
-                            英語でのコミュニケーション能力を証明。海外の技術ドキュメントや
-                            国際的なプロジェクト対応が可能なレベルです。
-                        </p>
-                    </div>
+        <section class="qualifications-grid">
+            <div class="qualification-card">
+                <div class="qualification-icon">🌐</div>
+                <div class="qualification-content">
+                    <h3>TOEIC IP 765点</h3>
+                    <p class="qualification-org">ETS</p>
+                    <p class="qualification-date">2023年6月取得</p>
+                    <p class="qualification-description">
+                        英語でのコミュニケーション能力を証明。海外の技術ドキュメントや
+                        国際的なプロジェクト対応が可能なレベルです。
+                    </p>
                 </div>
+            </div>
 
-                <div class="qualification-card">
-                    <div class="qualification-icon">⚡</div>
-                    <div class="qualification-content">
-                        <h3>第三種電気主任技術者</h3>
-                        <p class="qualification-org">経済産業省</p>
-                        <p class="qualification-date">2023年10月取得</p>
-                        <p class="qualification-description">
-                            電気事業法に基づく電気主任技術者資格。
-                            高圧・特別高圧設備の技術管理が可能です。
-                        </p>
-                    </div>
+            <div class="qualification-card">
+                <div class="qualification-icon">⚡</div>
+                <div class="qualification-content">
+                    <h3>第三種電気主任技術者</h3>
+                    <p class="qualification-org">経済産業省</p>
+                    <p class="qualification-date">2023年10月取得</p>
+                    <p class="qualification-description">
+                        電気事業法に基づく電気主任技術者資格。
+                        高圧・特別高圧設備の技術管理が可能です。
+                    </p>
                 </div>
+            </div>
 
-                <div class="qualification-card">
-                    <div class="qualification-icon">📱</div>
-                    <div class="qualification-content">
-                        <h3>第一級陸上特殊無線技士</h3>
-                        <p class="qualification-org">総務省</p>
-                        <p class="qualification-date">2024年2月取得</p>
-                        <p class="qualification-description">
-                            陸上の無線局の設計・管理を行うための国家資格。
-                            多様な無線通信技術の知識を証明します。
-                        </p>
-                    </div>
+            <div class="qualification-card">
+                <div class="qualification-icon">📱</div>
+                <div class="qualification-content">
+                    <h3>第一級陸上特殊無線技士</h3>
+                    <p class="qualification-org">総務省</p>
+                    <p class="qualification-date">2024年2月取得</p>
+                    <p class="qualification-description">
+                        陸上の無線局の設計・管理を行うための国家資格。
+                        多様な無線通信技術の知識を証明します。
+                    </p>
                 </div>
+            </div>
 
-                <div class="qualification-card">
-                    <div class="qualification-icon">🏆</div>
-                    <div class="qualification-content">
-                        <h3>基本情報技術者試験</h3>
-                        <p class="qualification-org">情報処理推進機構（IPA）</p>
-                        <p class="qualification-date">2023年12月取得</p>
-                        <p class="qualification-description">
-                            基本的なIT知識、プログラミング、データベース、ネットワークなど
-                            幅広い分野の知識を証明する国家資格です。
-                        </p>
-                    </div>
+            <div class="qualification-card">
+                <div class="qualification-icon">🏆</div>
+                <div class="qualification-content">
+                    <h3>基本情報技術者試験</h3>
+                    <p class="qualification-org">情報処理推進機構（IPA）</p>
+                    <p class="qualification-date">2023年12月取得</p>
+                    <p class="qualification-description">
+                        基本的なIT知識、プログラミング、データベース、ネットワークなど
+                        幅広い分野の知識を証明する国家資格です。
+                    </p>
                 </div>
+            </div>
 
-                <div class="qualification-card">
-                    <div class="qualification-icon">🎨</div>
-                    <div class="qualification-content">
-                        <h3>Python 3 エンジニア認定基礎試験</h3>
-                        <p class="qualification-org">一般社団法人 Python エンジニア認定委員会</p>
-                        <p class="qualification-date">2024年1月取得</p>
-                        <p class="qualification-description">
-                            Pythonの基礎知識とプログラミング能力を証明。
-                            データ分析やAI開発の基礎技術を習得しています。
-                        </p>
-                    </div>
+            <div class="qualification-card">
+                <div class="qualification-icon">🎨</div>
+                <div class="qualification-content">
+                    <h3>Python 3 エンジニア認定基礎試験</h3>
+                    <p class="qualification-org">Pythonエンジニア認定委員会</p>
+                    <p class="qualification-date">2024年1月取得</p>
+                    <p class="qualification-description">
+                        Pythonの基礎知識とプログラミング能力を証明。
+                        データ分析やAI開発の基礎技術を習得しています。
+                    </p>
                 </div>
+            </div>
 
-                <div class="qualification-card">
-                    <div class="qualification-icon">🔒</div>
-                    <div class="qualification-content">
-                        <h3>Python 3 エンジニア認定データ分析試験</h3>
-                        <p class="qualification-org">一般社団法人 Python エンジニア認定委員会</p>
-                        <p class="qualification-date">2024年3月取得</p>
-                        <p class="qualification-description">
-                            Pythonを使用したデータ分析の専門知識を証明。
-                            機械学習や統計分析の実践スキルを保有しています。
-                        </p>
-                    </div>
+            <div class="qualification-card">
+                <div class="qualification-icon">🔒</div>
+                <div class="qualification-content">
+                    <h3>Python 3 エンジニア認定データ分析試験</h3>
+                    <p class="qualification-org">Pythonエンジニア認定委員会</p>
+                    <p class="qualification-date">2024年3月取得</p>
+                    <p class="qualification-description">
+                        Pythonを使用したデータ分析の専門知識を証明。
+                        機械学習や統計分析の実践スキルを保有しています。
+                    </p>
                 </div>
             </div>
         </section>
@@ -119,7 +119,7 @@
             <h2>今後の目標</h2>
             <div class="goals-grid">
                 <div class="goal-card">
-                    <h3>2024年中の目標</h3>
+                    <h3>取得予定</h3>
                     <ul>
                         <li>Java Silver</li>
                         <li>電気工事士2種</li>
