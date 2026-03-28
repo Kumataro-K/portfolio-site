@@ -16,11 +16,28 @@ const workCards = document.querySelectorAll('.work-card');
 // ========================================
 // サイドバーの開閉機能
 // ========================================
-function toggleSidebar() {
-    sidebar.classList.toggle('closed');
-    mainContent.classList.toggle('expanded');
+let isMobile = window.innerWidth <= 768;
+let sidebarTimeout;
+
+function toggleSidebar(forceState = null) {
+    if (forceState !== null) {
+        if (forceState) {
+            sidebar.classList.remove('closed');
+            mainContent.classList.remove('expanded');
+        } else {
+            sidebar.classList.add('closed');
+            mainContent.classList.add('expanded');
+        }
+    } else {
+        sidebar.classList.toggle('closed');
+        mainContent.classList.toggle('expanded');
+    }
     
     // ハンバーガーメニューのアニメーション
+    updateHamburgerAnimation();
+}
+
+function updateHamburgerAnimation() {
     const spans = sidebarToggle.querySelectorAll('span');
     spans.forEach((span, index) => {
         if (sidebar.classList.contains('closed')) {
@@ -37,9 +54,58 @@ function toggleSidebar() {
     });
 }
 
+function showSidebar() {
+    clearTimeout(sidebarTimeout);
+    sidebar.classList.remove('closed');
+    mainContent.classList.remove('expanded');
+    updateHamburgerAnimation();
+}
+
+function hideSidebar() {
+    sidebarTimeout = setTimeout(() => {
+        if (!isMobile) {
+            sidebar.classList.add('closed');
+            mainContent.classList.add('expanded');
+            updateHamburgerAnimation();
+        }
+    }, 300);
+}
+
+// モバイル判定を更新
+function updateMobileStatus() {
+    isMobile = window.innerWidth <= 768;
+    if (!isMobile) {
+        // デスクトップではデフォルトで閉じる
+        sidebar.classList.add('closed');
+        mainContent.classList.add('expanded');
+    } else {
+        // モバイルではデフォルトで閉じる
+        sidebar.classList.add('closed');
+        mainContent.classList.add('expanded');
+    }
+    updateHamburgerAnimation();
+}
+
 // サイドバートグルのイベントリスナー
 if (sidebarToggle) {
-    sidebarToggle.addEventListener('click', toggleSidebar);
+    sidebarToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (isMobile) {
+            toggleSidebar();
+        }
+    });
+    
+    // デスクトップでのホバー機能
+    if (!isMobile) {
+        sidebarToggle.addEventListener('mouseenter', showSidebar);
+        sidebarToggle.addEventListener('mouseleave', hideSidebar);
+        
+        sidebar.addEventListener('mouseenter', () => {
+            clearTimeout(sidebarTimeout);
+        });
+        
+        sidebar.addEventListener('mouseleave', hideSidebar);
+    }
 }
 
 // ========================================
@@ -280,6 +346,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ページ遷移時の処理を実行
     handlePageTransition();
     
+    // モバイルステータスを初期化
+    updateMobileStatus();
+    
     // スクロールイベント
     window.addEventListener('scroll', handleScroll);
     
@@ -354,9 +423,7 @@ window.addEventListener('scroll', optimizedHandleScroll);
 
 // リサイズイベントを最適化
 const optimizedResize = debounce(() => {
-    if (window.innerWidth <= 480 && !sidebar.classList.contains('closed')) {
-        toggleSidebar();
-    }
+    updateMobileStatus();
 }, 250);
 window.addEventListener('resize', optimizedResize);
 
