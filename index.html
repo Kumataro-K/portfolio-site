@@ -1,1 +1,99 @@
-<!-- index.html file content -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- サイドバー -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>メニュー</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link active">ホーム</a></li>
+                <li><a href="qualifications.html" class="nav-link">取得資格</a></li>
+                <li><a href="works.html" class="nav-link">制作作品</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>山田 太郎</h1>
+                <p class="subtitle">Web開発者 / UIデザイナー</p>
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>自己紹介</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        こんにちは！山田太郎です。Web開発とUIデザインに情熱を注いでいる開発者です。
+                        ユーザーにとって使いやすく、美しいウェブアプリケーションを作ることを目指しています。
+                    </p>
+                    <p>
+                        最新の技術トレンドを常に追いかけ、ReactやVue.jsなどのモダンなフレームワークを
+                        活用した開発経験が豊富です。また、レスポンシブデザインとアクセシビリティにも
+                        力を入れています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>スキル</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Vue.js</li>
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>バックエンド</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>デザインツール</h3>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Adobe XD</li>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>作品を見る</h2>
+            <p>私の制作作品やアプリケーションをご覧いただけます</p>
+            <a href="works.html" class="cta-button">作品一覧を見る</a>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

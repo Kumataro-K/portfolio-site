@@ -1,1 +1,199 @@
-<!-- works/app1.html file content -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タスク管理アプリ - ポートフォリオサイト</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- サイドバー -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>メニュー</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="../index.html" class="nav-link">ホーム</a></li>
+                <li><a href="../qualifications.html" class="nav-link">取得資格</a></li>
+                <li><a href="../works.html" class="nav-link">制作作品</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <div class="breadcrumb">
+            <a href="../works.html">制作作品</a> > タスク管理アプリ
+        </div>
+
+        <header class="work-detail-header">
+            <h1>タスク管理アプリ</h1>
+            <p class="work-subtitle">チームコラボレーション機能付きリアルタイムタスク管理システム</p>
+        </header>
+
+        <section class="work-overview">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>概要</h2>
+                    <p>
+                        このタスク管理アプリは、リモートワークや分散チームでのプロジェクト管理を効率化するために開発されました。
+                        リアルタイム同期機能により、チームメンバー全員が常に最新の情報を共有できます。
+                    </p>
+                    <p>
+                        直感的なドラッグ&ドロップインターフェースとカスタマイズ可能なダッシュボードで、
+                        プロジェクトの進捗状況を視覚的に把握できます。また、詳細なレポート機能により、
+                        チームの生産性分析も可能です。
+                    </p>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/task-manager-detail.png" alt="タスク管理アプリのメイン画面" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="work-features">
+            <h2>主な機能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>タスク管理</h3>
+                    <p>カンバンボード形式でタスクの進捗を視覚的に管理。ドラッグ&ドロップで簡単にステータス変更</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>リアルタイムコラボレーション</h3>
+                    <p>WebSocketを使用したリアルタイム同期。チームメンバーの活動を即座に反映</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>進捗レポート</h3>
+                    <p>詳細な分析ダッシュボード。チームの生産性やプロジェクトの進捗をグラフで表示</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>通知システム</h3>
+                    <p>タスクの割り当てや期限近いタスクをプッシュ通知で提醒</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📁</div>
+                    <h3>ファイル共有</h3>
+                    <p>タスクに関連するファイルをアップロード・共有。ドラッグ&ドロップで簡単添付</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>コメント機能</h3>
+                    <p>タスクごとにコメントスレッド。@メンションで特定メンバーに通知</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-tech-stack">
+            <h2>使用技術</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-category">
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li>React 18 - コンポーネントベースのUI開発</li>
+                        <li>TypeScript - 型安全なJavaScript開発</li>
+                        <li>Redux Toolkit - 状態管理</li>
+                        <li>Material-UI - UIコンポーネントライブラリ</li>
+                        <li>React DnD - ドラッグ&ドロップ機能</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>バックエンド</h3>
+                    <ul>
+                        <li>Node.js - サーバーサイドJavaScript</li>
+                        <li>Express.js - Webアプリケーションフレームワーク</li>
+                        <li>Socket.io - リアルタイム通信</li>
+                        <li>JWT - 認証・認可</li>
+                        <li>Bcrypt - パスワードハッシュ化</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>データベース</h3>
+                    <ul>
+                        <li>MongoDB - NoSQLデータベース</li>
+                        <li>Mongoose - MongoDB ODM</li>
+                        <li>Redis - キャッシュとセッション管理</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>デプロイ・インフラ</h3>
+                    <ul>
+                        <li>Docker - コンテナ化</li>
+                        <li>AWS EC2 - クラウドサーバー</li>
+                        <li>Nginx - リバースプロキシ</li>
+                        <li>GitHub Actions - CI/CD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-gallery">
+            <h2>スクリーンショット</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/task-manager-dashboard.png" alt="ダッシュボード画面" loading="lazy">
+                    <p>プロジェクトダッシュボード</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/task-manager-board.png" alt="カンバンボード" loading="lazy">
+                    <p>カンバンボード</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/task-manager-mobile.png" alt="モバイル画面" loading="lazy">
+                    <p>モバイル対応UI</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/task-manager-reports.png" alt="レポート画面" loading="lazy">
+                    <p>進捗レポート</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-links">
+            <h2>関連リンク</h2>
+            <div class="links-grid">
+                <a href="https://github.com/username/task-manager-app" class="link-card" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon">📦</div>
+                    <div class="link-content">
+                        <h3>GitHubリポジトリ</h3>
+                        <p>ソースコードと技術ドキュメント</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="https://task-manager-demo.herokuapp.com" class="link-card" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon">🚀</div>
+                    <div class="link-content">
+                        <h3>デモサイト</h3>
+                        <p>実際にアプリを試す（デモ版）</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="#" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <div class="link-content">
+                        <h3>技術ブログ</h3>
+                        <p>開発過程と技術的課題の解決方法</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <div class="work-navigation">
+            <a href="../works.html" class="nav-btn back-btn">← 作品一覧に戻る</a>
+            <a href="app2.html" class="nav-btn next-btn">次の作品 →</a>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

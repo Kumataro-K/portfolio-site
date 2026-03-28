@@ -1,1 +1,177 @@
-<!-- works.html file content -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>制作作品 - ポートフォリオサイト</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- サイドバー -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>メニュー</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">ホーム</a></li>
+                <li><a href="qualifications.html" class="nav-link">取得資格</a></li>
+                <li><a href="works.html" class="nav-link active">制作作品</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <header class="page-header">
+            <h1>制作作品</h1>
+            <p>これまでに開発したアプリケーションや作品の一覧です</p>
+        </header>
+
+        <section class="works-grid">
+            <!-- 作品カード1 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/task-manager-app.png" alt="タスク管理アプリ" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>タスク管理アプリ</h3>
+                    <p class="work-description">
+                        ReactとNode.jsを使用したリアルタイムタスク管理アプリ。
+                        チームでのコラボレーション機能を搭載し、プロジェクトの進捗管理を効率化します。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Socket.io</span>
+                    </div>
+                    <a href="works/app1.html" class="work-link">詳細を見る →</a>
+                </div>
+            </article>
+
+            <!-- 作品カード2 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/ecommerce-site.png" alt="ECサイト" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>ECサイト</h3>
+                    <p class="work-description">
+                        Vue.jsとLaravelで構築したフルスタックECサイト。
+                        決済機能や在庫管理システムを完備し、スケーラブルな設計を実現しました。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Stripe API</span>
+                    </div>
+                    <a href="works/app2.html" class="work-link">詳細を見る →</a>
+                </div>
+            </article>
+
+            <!-- 作品カード3 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/weather-dashboard.png" alt="天気ダッシュボード" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>天気ダッシュボード</h3>
+                    <p class="work-description">
+                        OpenWeather APIを活用したリアルタイム天気情報ダッシュボード。
+                        週間天気予測や地域別の天気比較機能を実装しています。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">Weather API</span>
+                        <span class="tech-tag">CSS Grid</span>
+                    </div>
+                    <a href="#" class="work-link coming-soon">準備中 →</a>
+                </div>
+            </article>
+
+            <!-- 作品カード4 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/portfolio-generator.png" alt="ポートフォリオジェネレーター" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>ポートフォリオジェネレーター</h3>
+                    <p class="work-description">
+                        開発者向けのポートフォリオサイト自動生成ツール。
+                        テンプレート選択とドラッグ&ドロップで簡単にポートフォリオを作成できます。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Vercel</span>
+                    </div>
+                    <a href="#" class="work-link coming-soon">準備中 →</a>
+                </div>
+            </article>
+
+            <!-- 作品カード5 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/chat-app.png" alt="チャットアプリ" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>リアルタイムチャットアプリ</h3>
+                    <p class="work-description">
+                        WebSocketを使用したリアルタイムチャットアプリ。
+                        グループチャット、ファイル共有、絵文字機能などを搭載しています。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">PWA</span>
+                    </div>
+                    <a href="#" class="work-link coming-soon">準備中 →</a>
+                </div>
+            </article>
+
+            <!-- 作品カード6 -->
+            <article class="work-card">
+                <div class="work-image">
+                    <img src="images/fitness-tracker.png" alt="フィットネストラッカー" loading="lazy">
+                </div>
+                <div class="work-content">
+                    <h3>フィットネストラッカー</h3>
+                    <p class="work-description">
+                        個人の運動記録と目標管理ができるモバイル対応Webアプリ。
+                        カロリー計算やトレーニングプランの自動生成機能を実装。
+                    </p>
+                    <div class="work-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                    <a href="#" class="work-link coming-soon">準備中 →</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="filter-section">
+            <h2>作品の絞り込み</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">すべて</button>
+                <button class="filter-btn" data-filter="web">Webアプリ</button>
+                <button class="filter-btn" data-filter="mobile">モバイル</button>
+                <button class="filter-btn" data-filter="design">デザイン</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

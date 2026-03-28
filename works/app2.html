@@ -1,1 +1,229 @@
-<!-- works/app2.html file content -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECサイト - ポートフォリオサイト</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- サイドバー -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" id="sidebarToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <h2>メニュー</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="../index.html" class="nav-link">ホーム</a></li>
+                <li><a href="../qualifications.html" class="nav-link">取得資格</a></li>
+                <li><a href="../works.html" class="nav-link">制作作品</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- メインコンテンツ -->
+    <main class="main-content">
+        <div class="breadcrumb">
+            <a href="../works.html">制作作品</a> > ECサイト
+        </div>
+
+        <header class="work-detail-header">
+            <h1>ECサイト</h1>
+            <p class="work-subtitle">スケーラブルなフルスタックEコマースプラットフォーム</p>
+        </header>
+
+        <section class="work-overview">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>概要</h2>
+                    <p>
+                        このECサイトは、中小企業向けに開発されたフルスタックEコマースプラットフォームです。
+                        直感的な管理画面と豊富な機能により、オンラインストアの運営を容易にします。
+                    </p>
+                    <p>
+                        モバイルファースト設計で、スマートフォンからでも快適なショッピング体験を提供。
+                        決済システムや在庫管理、注文管理など、EC運営に必要な機能をすべて網羅しています。
+                        また、SEO対策やパフォーマンス最適化も徹底して行っています。
+                    </p>
+                </div>
+                <div class="overview-image">
+                    <img src="../images/ecommerce-detail.png" alt="ECサイトのメイン画面" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="work-features">
+            <h2>主な機能</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3>商品管理</h3>
+                    <p>カテゴリ分類、在庫管理、価格設定、商品画像の複数登録機能</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>決済システム</h3>
+                    <p>クレジットカード、銀行振込、代金引換など多彩な決済手段に対応</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>注文管理</h3>
+                    <p>注文状況のリアルタイム管理、発送追跡、返品・交換対応</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👤</div>
+                    <h3>会員管理</h3>
+                    <p>会員登録、購入履歴、ポイントシステム、クーポン機能</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>売上分析</h3>
+                    <p>リアルタイム売上ダッシュボード、商品別売上レポート、顧客分析</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>検索機能</h3>
+                    <p>高速な全文検索、フィルター機能、おすすめ商品表示</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-tech-stack">
+            <h2>使用技術</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-category">
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li>Vue.js 3 - プログレッシブフレームワーク</li>
+                        <li>Nuxt.js - SSR・SSG対応</li>
+                        <li>Vuex - 状態管理</li>
+                        <li>Vuetify - Material Designコンポーネント</li>
+                        <li>Vue Router - ルーティング</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>バックエンド</h3>
+                    <ul>
+                        <li>Laravel 9 - PHPフレームワーク</li>
+                        <li>MySQL 8 - リレーショナルデータベース</li>
+                        <li>Eloquent ORM - データベース操作</li>
+                        <li>Laravel Sanctum - API認証</li>
+                        <li>Queue - 非同期処理</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>決済・外部API</h3>
+                    <ul>
+                        <li>Stripe API - クレジットカード決済</li>
+                        <li>PayPal SDK - PayPal決済</li>
+                        <li>Amazon S3 - 画像ストレージ</li>
+                        <li>SendGrid - メール配信</li>
+                        <li>Google Analytics - アクセス分析</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>デプロイ・運用</h3>
+                    <ul>
+                        <li>DigitalOcean - クラウドホスティング</li>
+                        <li>Docker - コンテナ化</li>
+                        <li>Redis - キャッシュ・セッション</li>
+                        <li>Cloudflare - CDN・SSL</li>
+                        <li>Laravel Forge - サーバー管理</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-gallery">
+            <h2>スクリーンショット</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/ecommerce-home.png" alt="トップページ" loading="lazy">
+                    <p>トップページ</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/ecommerce-product.png" alt="商品詳細ページ" loading="lazy">
+                    <p>商品詳細ページ</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/ecommerce-cart.png" alt="カート画面" loading="lazy">
+                    <p>ショッピングカート</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/ecommerce-admin.png" alt="管理画面" loading="lazy">
+                    <p>管理画面ダッシュボード</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-links">
+            <h2>関連リンク</h2>
+            <div class="links-grid">
+                <a href="https://github.com/username/ecommerce-platform" class="link-card" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon">📦</div>
+                    <div class="link-content">
+                        <h3>GitHubリポジトリ</h3>
+                        <p>ソースコードと技術ドキュメント</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="https://ecommerce-demo.example.com" class="link-card" target="_blank" rel="noopener noreferrer">
+                    <div class="link-icon">🚀</div>
+                    <div class="link-content">
+                        <h3>デモサイト</h3>
+                        <p>実際にサイトを体験（デモ版）</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+                <a href="#" class="link-card">
+                    <div class="link-icon">📄</div>
+                    <div class="link-content">
+                        <h3>技術解説記事</h3>
+                        <p>アーキテクチャ設計と開発ノウハウ</p>
+                    </div>
+                    <span class="link-arrow">→</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="work-challenges">
+            <h2>開発における課題と解決</h2>
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <h3>パフォーマンス最適化</h3>
+                    <p>
+                        大量の商品データを高速に表示するため、画像の遅延読み込み、キャッシュ戦略の最適化、
+                        データベースクエリの改善を実施。ページ読み込み時間を60%削減しました。
+                    </p>
+                </div>
+                <div class="challenge-card">
+                    <h3>決済セキュリティ</h3>
+                    <p>
+                        PCI DSS準拠の決済システムを実装。トークン化によるカード情報保護、
+                        SSL通信の強化、定期的なセキュリティ監査を実施しています。
+                    </p>
+                </div>
+                <div class="challenge-card">
+                    <h3>スケーラビリティ</h3>
+                    <p>
+                        負荷分散と水平スケーリングを考慮したアーキテクチャ設計。
+                        キューイングシステムによる処理の非同期化で、アクセス急増時の安定性を確保。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="work-navigation">
+            <a href="app1.html" class="nav-btn back-btn">← 前の作品</a>
+            <a href="../works.html" class="nav-btn back-btn">作品一覧に戻る</a>
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
